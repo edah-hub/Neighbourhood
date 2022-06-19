@@ -28,3 +28,16 @@ This is a web application allows you to be in the loop about everything happenin
 | ----------------------- | ------------------ | ----------------------------------------------------- |
 | Login, Signup or Logout | Username, Password | User will be either loggedin, registered, loggedout   |
 | upload a business       | name, description, image  | The business will be posted to the Neighbourhood page |
+
+## Development
+
+Want to contribute? Great!
+
+To fix a bug or enhance an existing module, follow these steps:
+- Fork the repo
+- Create a new branch (git checkout -b improve-feature)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (git commit -am 'Improve feature')
+- Push to the branch (git push origin improve-feature)
+- Create a Pull Request
