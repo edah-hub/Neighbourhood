@@ -12,6 +12,10 @@ This is a web application allows you to be in the loop about everything happenin
 
 - Users Find a list of different businesses in my neighborhood.
 
+- Users can search for different businesses in their neighborhood.
+
+-  Users can Find Contact Information for the health department and Police authorities near my neighborhood. 
+
 ## Technologies Used
 - python-3.9
 - Django
