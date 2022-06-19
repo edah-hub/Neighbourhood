@@ -11,7 +11,8 @@ This is a web application allows you to be in the loop about everything happenin
 - MDBootstrap
 
 ##### Requirements
-- python-3.9/pip
+- python-3.9
+- pip
 - Django
 - Code/text editor
 - Virtual environment (virtualenv)
