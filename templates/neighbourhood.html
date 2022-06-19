@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<main class="container">
+ <div style="margin-top: 50px;">
+  <h1 style="text-align: center;">{{request.user.neighboorhood}}.
+   <small data-bs-toggle="modal" data-bs-target="#exampleModal"
+    style="font-size: 20px; color: #5c8fff; cursor: pointer;">
+    <i class="fa fa-external-link" aria-hidden="true"></i>
+   </small>
+  </h1>
+ </div>
+ <h2 style="margin-top: 50px; margin-bottom: 20px;">Latest Posts</h2>
+
+ {% for post in posts %}
+
+ <div style="display: flex; max-width: 900px; gap: 10px;">
+  <div>
+   <img src="{{post.user.image.url}}" alt="" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+  </div>
+  <div>
+   <h5>@{{post.user.username}}</h5>
+   <small class="text-muted">{{post.created | date:"M d, Y"}}</small>
+   <p>{{post.body}}</p>
+  </div>
+ </div>
+ {% endfor %}
+
+
+
+
+ <div class="row mb-2" style="margin-top: 80px;">
+  <h2 style="margin-bottom: 20px;">Business NearBy</h2>
+  {% for bizna in businesses %}
+
+  <div class="col-md-6">
+   <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col p-4 d-flex flex-column position-static">
+     <strong class="d-inline-block mb-2 text-primary">@{{bizna.user.username}}</strong>
+     <h3 class="mb-0">{{bizna.name}}</h3>
+     <div class="mb-1 text-muted">{{bizna.created | date:"M d, Y"}}</div>
+     <p class="card-text mb-auto">{{bizna.body}}.</p>
+     <span style="margin-top: 20px;">Contact:</span>
+     <p style="color: blue;">{{bizna.contact}}</p>
+    </div>
+    <div class="col-auto d-none d-lg-block">
+
+
+     <img src="{{bizna.image.url}}" alt="" width="350" height="300" style="object-fit: cover;">
+
+    </div>
+   </div>
+  </div>
+  {% endfor %}
+
+
+
+ </div>
+</main>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-header">
+    <h5 class="modal-title" style="text-align: center;" id="exampleModalLabel">{{request.user.neighboorhood}}</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+   </div>
+   <div class="modal-body">
+
+    <p>Loaction : {{neighbour.location}}</p>
+    <p>Members : {{members}}</p>
+    <p>Health Department : +254768454358</p>
+    <p>Police Department : +254789567457</p>
+
+   </div>
+   <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+   </div>
+  </div>
+ </div>
+</div>
+{% endblock content %}

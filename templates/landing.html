@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="b-example-divider"></div>
+
+<div class="container my-5">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1">Neighbour Hood</h1>
+      <p class="lead">Neighbourhood helps you connect with people who are living in the same region. Residents of the
+        same region can
+        communicate with each other. Health and police department contact information is easily accessible. The user can
+        also
+        see nearby businesses.
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <a href="{% url 'loginPage'%}" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Login</a>
+        <a href="{% url 'registerPage'%}" class="btn btn-outline-secondary btn-lg px-4">Signup</a>
+      </div>
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+      <img class="rounded-lg-3"
+        src="https://res.cloudinary.com/husseincloud/image/upload/v1655654826/pexels-magda-ehlers-772177_iglxpg.jpg"
+        alt="" width="720">
+    </div>
+  </div>
+</div>
+
+<div class="b-example-divider mb-0"></div>
+{% endblock content %}

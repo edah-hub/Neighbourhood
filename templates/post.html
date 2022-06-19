@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="max-width: 500px; margin-bottom: 100px; margin-top: 100px;">
+ <main class="form-signin text-center">
+  <form action="" method="POST">
+   {% csrf_token %}
+   <img class="mb-4" src="../static/svg/Black logo - no background.svg" alt="" width="150" height="57">
+   <h1 class="h3 mb-3 fw-normal">Say Anything</h1>
+
+   <div class="form-floating">
+    <textarea name="body" required class="form-control" placeholder="name@example.com" id="floatingInput" cols="40"
+     rows="20"></textarea>
+    <label for="floatingInput">Caption</label>
+   </div>
+   <br>
+
+
+   <div class="checkbox mb-3">
+
+   </div>
+   <button class="w-100 btn btn-lg btn-primary" type="submit">Post</button>
+
+  </form>
+ </main>
+</div>
+{% endblock content %}

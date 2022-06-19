@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="max-width: 500px; margin-bottom: 100px; margin-top: 100px;">
+ <main class="form-signin text-center">
+  <form action="" method="POST" enctype="multipart/form-data">
+   {% csrf_token %}
+   <img class="mb-4" src="../static/svg/Black logo - no background.svg" alt="" width="150" height="57">
+   <h1 class="h3 mb-3 fw-normal">Post Your Business</h1>
+
+   <div class="form-floating">
+    <input type="text" class="form-control" id="floatingInput" placeholder="Business Name" name="name" required>
+    <label for="floatingInput">Business Name</label>
+   </div>
+   <br>
+   <div class="form-floating">
+    <input type="text" class="form-control" id="floatingInput" placeholder="Contact" name="contact" required>
+    <label for="floatingInput">Contact Info</label>
+   </div>
+   <br>
+   <div class="mb-3">
+    <!-- <label for="formFileMultiple" class="form-label">Image</label> -->
+    <input class="form-control" name="image" type="file" id="formFileMultiple" multiple required>
+   </div>
+   <div class="form-floating">
+    <textarea name="body" required class="form-control" placeholder="Description" id="floatingInput" cols="40"
+     rows="20"></textarea>
+    <label for="floatingInput">Description</label>
+   </div>
+
+   <div class="checkbox mb-3">
+
+   </div>
+   <button class="w-100 btn btn-lg btn-primary" type="submit">Post</button>
+
+  </form>
+ </main>
+</div>
+{% endblock content %}
