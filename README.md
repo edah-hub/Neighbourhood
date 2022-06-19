@@ -15,3 +15,9 @@ This is a web application allows you to be in the loop about everything happenin
 - Django
 - Code/text editor
 - Virtual environment (virtualenv)
+
+##### Setup Instructions and Installation
+
+- Clone this repository to a location in your file system. `git clone https://github.com/edah-hub/Neighbourhood.git`
+- Open terminal command line then navigate to the root folder of the application. `neighbourhood`
+- Open with `python3 manage.py runserver` on your Browser.
