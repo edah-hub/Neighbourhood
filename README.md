@@ -21,3 +21,10 @@ This is a web application allows you to be in the loop about everything happenin
 - Clone this repository to a location in your file system. `git clone https://github.com/edah-hub/Neighbourhood.git`
 - Open terminal command line then navigate to the root folder of the application. `neighbourhood`
 - Open with `python3 manage.py runserver` on your Browser.
+
+## Behaviour Driven Development
+
+| Behavior                | Input description  | Output description                                    |
+| ----------------------- | ------------------ | ----------------------------------------------------- |
+| Login, Signup or Logout | Username, Password | User will be either loggedin, registered, loggedout   |
+| upload a business       | name, description, image  | The business will be posted to the Neighbourhood page |
