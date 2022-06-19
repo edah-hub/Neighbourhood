@@ -51,6 +51,11 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ### AUTHOR
 Chepngetich Edah
 
+## Contact Info
+
+cheruiyotedah@gmai.com
+
+
 
 ##### Link to Live Site : [https://neighbourhood-web.herokuapp.com/](https://neighbourhood-web.herokuapp.com/)
 
