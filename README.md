@@ -49,3 +49,6 @@ If you find a bug (the website couldn't handle the query and or gave undesired r
 If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
 
 ##### Link to Live Site : [https://neighbourhood-web.herokuapp.com/](https://neighbourhood-web.herokuapp.com/)
+
+*MIT*
+Copyright (c) 2022 **Chepngetich Edah**
