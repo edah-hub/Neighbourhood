@@ -4,6 +4,14 @@
 ## Description
 This is a web application allows you to be in the loop about everything happening in your neighborhood. From contact information of different neighbours to meeting announcements or even alerts.User can post a business or any upcoming events.
 
+## User Story
+
+- Users need to Sign in to the application to start using it
+
+- Users can Set up a profile about them and a general location and their neighborhood name
+
+- Users Find a list of different businesses in my neighborhood.
+
 ## Technologies Used
 - python-3.9
 - Django
