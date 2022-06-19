@@ -16,6 +16,10 @@ This is a web application allows you to be in the loop about everything happenin
 
 -  Users can Find Contact Information for the health department and Police authorities near my neighborhood. 
 
+-  Users can Change their neighborhood when I decide to move out.
+
+-  Users can Only view details of a single neighborhood.
+
 ## Technologies Used
 - python-3.9
 - Django
